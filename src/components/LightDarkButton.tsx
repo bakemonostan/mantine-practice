@@ -11,6 +11,7 @@ const LightDarkButton = () => {
         color={dark ? 'yellow' : 'blue'}
         onClick={() => toggleColorScheme()}
         title='Toggle color scheme'
+        m='md'
       >
         {dark ? <Sun size={20} /> : <MoonStars size={20} />}
       </ActionIcon>

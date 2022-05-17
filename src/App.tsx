@@ -5,9 +5,7 @@ import {
   Paper,
 } from '@mantine/core';
 import { useHotkeys, useLocalStorage } from '@mantine/hooks';
-import Buttons from './components/Buttons';
-import Cards from './components/Cards';
-import LightDarkButton from './components/LightDarkButton';
+import AppShellDemo from './components/AppShellDemo';
 
 function App() {
   const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
@@ -26,10 +24,8 @@ function App() {
       toggleColorScheme={toggleColorScheme}
     >
       <MantineProvider theme={{ colorScheme }}>
-        <Paper p='md' radius={0} style={{ minHeight: '100vh' }}>
-          <Cards />
-          <LightDarkButton />
-          <Buttons />
+        <Paper>
+          <AppShellDemo />
         </Paper>
       </MantineProvider>
     </ColorSchemeProvider>
