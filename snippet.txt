@@ -1,0 +1,51 @@
+# CODE SNIPPET FOR MESSING AROUND WITH THE MANTINE THEME OBJECT
+
+
+
+<MantineProvider
+theme={{
+  fontFamily: 'Open Sans',
+  colorScheme: 'dark',
+  fontSizes: { md: 15 },
+  loader: 'dots',
+  colors: {
+    danky: ['#ffd8a8'],
+    blue: [
+      '#495057',
+      '#e64980',
+      '#c2255c',
+      '#f03e3e',
+      '#15aabf',
+      '#20c997',
+      '#40c057',
+      '#d8f5a2',
+      '#ff922b',
+      '#f03e3e',
+    ],
+  },
+}}
+styles={{
+  Button: (theme) => ({
+    root: {
+      backgroundColor: theme.colors.danky,
+      color: theme.colors.blue[2],
+    },
+  }),
+}}
+>
+<Paper p={6}>
+  <Text>This is a simple text tag</Text>
+  <Text>
+    This is a simple text tag with Lorem ipsum, dolor sit amet
+    consectetur adipisicing elit. Dolores cupiditate porro asperiores
+    repellat facilis quo omnis suscipit nostrum quis veritatis.
+  </Text>
+</Paper>
+<Button>Hello Mars!</Button>
+<Button>Hello Mars!</Button>
+<Loader />
+<FaceIcon />
+<MantineProvider theme={{ fontFamily: 'Greycliff CF, sans-serif' }}>
+  <Button>Greycliff CF button</Button>
+</MantineProvider>
+</MantineProvider>
