@@ -5,6 +5,7 @@ import {
   Paper,
 } from '@mantine/core';
 import { useHotkeys, useLocalStorage } from '@mantine/hooks';
+import Buttons from './components/Buttons';
 import Cards from './components/Cards';
 import LightDarkButton from './components/LightDarkButton';
 
@@ -28,6 +29,7 @@ function App() {
         <Paper p='md' radius={0} style={{ minHeight: '100vh' }}>
           <Cards />
           <LightDarkButton />
+          <Buttons />
         </Paper>
       </MantineProvider>
     </ColorSchemeProvider>
